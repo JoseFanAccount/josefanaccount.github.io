@@ -38,9 +38,9 @@ nav.menu ul {
 	overflow:hidden;
 	color:#fff;
 	list-style: none;
-	float:left;
+	float:center;
 	padding:0;
-	width: 650px;
+	width: 950px;
 	margin:0 0 0;
 	background: #1abc9c;
 	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.55);
@@ -73,42 +73,8 @@ nav.menu ul a:hover {
 	width: 100px;
 }
 
-.sidebar {
-	float:right;
-	width:275px;
-}
-
-.sidebar .widget {
-	padding:25px;
-	margin:0 0 25px;
-	background:#fff;
-	border-bottom: 2px solid #fff;
-	transition: all 0.5s ease;
-}
-
-.sidebar .widget:hover {
-	border-bottom: 2px solid #3498db;
-}
-
-.sidebar .widget h2 {
-	padding:0;
-	margin:0 0 15px;
-	color:#3498db;
-	font-size: 18px;
-	font-weight:800;
-	text-transform: uppercase;
-}
-
-.sidebar .widget p {
-	font-size: 14px;
-}
-
-.sidebar .widget p:last-child {
-	margin:0;
-}
-
 .blog {
-	float:left;
+	float:center;
 }
 
 .conteudo {
@@ -167,14 +133,6 @@ nav.menu ul a:hover {
 	.wrap {
 		width: 90%;
 		margin:25px auto;
-	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
-
-	.sidebar .widget {
 		padding:5%;
 	}
 
@@ -183,7 +141,7 @@ nav.menu ul a:hover {
 	}
 
 	nav.menu ul {
-		float:inherit;
+		float:center;
 	}
 
 	nav.menu ul li {
@@ -229,13 +187,6 @@ nav.menu ul a:hover {
 	nav.menu ul a {
 		padding:15px;
 		font-size: 14px;
-	}
-
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
 	}
 
 	.conteudo {

@@ -3,17 +3,36 @@
 <head>
 	<title>DUNIA CINEMATIC</title>
 	<link rel="stylesheet" type="text/css" href="coba.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 10px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
 </head>
 <body>
-	
-	<header>
-		<h1 class="judul">DUNIA CINEMATIC</h1>
-		<p class="deskripsi">rekam semua dengan dibalut keindahan cinematic.</p>
-	</header>
-	
-	<div class="wrap">
-		<nav class="menu">
-			<ul>
+ 
+<div id="flip">MENU</div>
+<div id="panel" class="menu" class="wrap"><ul>
+				<li>
+					<a href="coba.html">Home</a>
+				</li>
 				<li>
 					<a href="history.html">History</a>
 				</li>
@@ -35,7 +54,30 @@
 				<li>
 					<a href="studio.html">Studio</a>
 				</li>
-			</ul>
+			</ul></div>
+
+</head>
+<body>
+	
+	<header>
+		<h1 class="judul">DUNIA CINEMATIC</h1>
+		<p class="deskripsi">rekam semua dengan dibalut keindahan cinematic.</p>
+	</header>
+	<div id="map"></div>
+
+	<script>
+		function initMap() {
+			var location = {lat: -7.795580, lng: 110.369490};
+			var map = google.maps.Map(document.getElementById("map"), {
+				zoom: 4,
+				center : location
+			});
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5CmjLmpe-zpA64P9REPqpDes4eV8AqV8&callback=initMap" ></script>
+	<div class="wrap">
+		<nav class="menu">
+
 		</nav>
 
 		<aside class="sidebar">
